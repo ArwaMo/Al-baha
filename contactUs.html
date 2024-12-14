@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا</title> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #082347;
+            text-align: center; 
+            padding: 20px 0;
+        }
+
+        header img {
+            max-width: 100%; 
+            height: auto;
+        }
+
+        .subject h1 {
+            background-color: #082347;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .contact-form, .contact-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: right;
+        }
+
+        form {
+            margin-right: 10px;
+        }
+
+        form label {
+            margin-left: 40px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        nav {
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            margin: 0 10px;
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        nav .contact {
+            background-color: #0f5150;
+        }
+
+        nav .contact p {
+            background-color: #0f5150;
+            color: #dd2424;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            header {
+                padding: 15px 0;
+            }
+
+            .subject h1 {
+                font-size: 1.5em;
+            }
+
+            .contact-info, .contact-form {
+                padding: 15px;
+            }
+
+            input, textarea {
+                padding: 12px;
+            }
+
+            input[type="submit"] {
+                padding: 12px;
+            }
+
+            nav a {
+                padding: 12px 18px;
+                margin: 0 8px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            header {
+                padding: 10px 0;
+            }
+
+            .subject h1 {
+                font-size: 1.2em;
+            }
+
+            .contact-info, .contact-form {
+                padding: 10px;
+            }
+
+            input, textarea {
+                padding: 10px;
+            }
+
+            nav a {
+                padding: 10px 15px;
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="images/Lights_Albaha.png" alt="logo">
+    </header>
+
+    <nav>
+        <a href="index.html">من نحن</a>
+        <a href="contactUs.html">اتصل بنا</a>
+    </nav>
+
+    <nav class="subject">
+        <h1>اتصل بنا</h1>
+    </nav>
+
+    <div class="container">
+        <div class="contact-info">
+            <h3>معلومات الاتصال</h3>
+            <p>Aluraija Al Gharbiyah، شارع مارية القبطية، حي، Riyadh <strong>:العنوان</strong></p>
+        </div>
+
+        <div class="contact-form">
+            <form action="#" method="post">
+                <label for="name">:الاسم</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">:البريد الإلكتروني</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">:الرسالة</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="إرسال">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>حقوق الطبع والنشر &copy; 2024</p>
+    </footer>
+
+</body>
+</html>
